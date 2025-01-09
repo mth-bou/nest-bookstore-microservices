@@ -20,7 +20,8 @@
     "paths": {
       "@app/contracts": ["libs/contracts/src"],
       "@app/contracts/*": ["libs/contracts/src/*"],
-      "@app/contracts/books": ["libs/contracts/src/books"]
+      "@app/contracts/books": ["libs/contracts/src/books"],
+      "@app/contracts/users": ["libs/contracts/src/users"],
     }
   }
 }
