@@ -1,0 +1,32 @@
+### findAll REQUEST
+GET http://localhost:3000/books
+
+### findOne REQUEST
+GET http://localhost:3000/books/1
+
+### create REQUEST
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "rating": 4.5
+}
+
+### update REQUEST
+PATCH http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "rating": 3.6
+}
+
+### delete REQUEST
+DELETE http://localhost:3000/books/3
+Content-Type: application/json
+
+{
+  "id": 3
+}
