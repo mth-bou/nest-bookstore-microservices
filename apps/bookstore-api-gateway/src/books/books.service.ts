@@ -11,10 +11,11 @@ import { BookDto } from './dto/book.dto';
 import { CreateBookDto } from './dto/create-book.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
 import { map } from 'rxjs';
+import { BOOKS_CLIENT } from './constants';
 
 @Injectable()
 export class BooksService {
-  constructor(@Inject('BOOKS_CLIENT') private booksClient: ClientProxy) {}
+  constructor(@Inject(BOOKS_CLIENT) private booksClient: ClientProxy) {}
 
   private mapBookDto(bookDto: ClientBookDto): BookDto {
     return {
