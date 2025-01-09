@@ -38,12 +38,24 @@ $ pnpm install
 # development
 $ pnpm run start
 
-# watch mode
-$ pnpm run start:dev
+# To run books service in watch mode
+$ pnpm run start:dev:books
+
+# To run users service in watch mode
+$ pnpm run start:dev:users
+
+# To run api gateway in watch mode
+$ pnpm run start:dev:bookstore-api-gateway
+
+# To run all services with concurrently in watch mode
+$ pnpm run start:dev:all
 
 # production mode
 $ pnpm run start:prod
 ```
+
+## Routes testing
+You can use the `.http` files at the root of the project to test the routes using the REST Client extension in VSCode or Webstorm.
 
 ## Run tests
 
